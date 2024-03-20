@@ -1,0 +1,93 @@
+{
+    "name": "ᴀɴᴏɴ ダ ᴍᴜsɪᴄ",
+    "description": "A Telegram Music Player Bot, written in Python with Pyrogram and Py-Tgcalls.",
+    "logo": "https://te.legra.ph/file/b8a0c1a00db3e57522b53.jpg",
+    "keywords": [
+    "python3",
+    "telegram",
+    "bot",
+    "AnonX",
+    "MusicBot",
+    "telegram-bot",
+    "pyrogram"
+    ],
+    "env": {
+      "API_ID": {
+        "description": "ضع هنا رقم API ID الخاص بك",
+        "value": "",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "ضع هنا كود API Hash الخاص بك",
+        "value": "",
+        "required": true
+      },
+      "BOT_TOKEN": {
+        "description": "ضع هنا التوكن الخاص بك",
+        "value": "",
+        "required": true
+      },
+      "OWNER_ID": {
+        "description": "ضع هنا الايدي الخاص بك",
+        "value": "",
+        "required": true
+      },
+      "MONGO_DB_URI": {
+        "description": "ضع هنا رابط التخزين Mongodb URL الخاص بك",
+        "value": "",
+        "required": true
+      },
+      "STRING_SESSION": {
+        "description": "ضع هنا جلسة Pyrogram V2 الخاصة بك",
+        "value": "",
+        "required": true
+      },
+      "HEROKU_API_KEY": {
+        "description": "ضع هنا مفتاح API Key الخاص بحساب هيروكو",
+        "value": "",
+        "required": false
+      },
+      "HEROKU_APP_NAME": {
+        "description": "ضع هنا اسم APP Name الحالية",
+        "value": "",
+        "required": false
+      },
+      "START_IMG_URL": {
+        "description": "ضع هنا رابط لصورة رسالة ستارت في البوت",
+        "value": "",
+        "required": false      
+      },
+      "SUPPORT_CHANNEL": {
+        "description": "ضع هنا رابط قناتك",
+        "value": "",
+        "required": true
+      },
+      "SUPPORT_CHAT": {
+        "description": "ضع هنا رابط جروبك",
+        "value": "",
+        "required": true
+      },
+      "DURATION_LIMIT": {
+        "description": "ضع هنا الحد الأقصى لوقت التشغيل بالدقيقه",
+        "value": "1440",
+        "required": false
+      },
+      "LOGGER_ID": {
+        "description": "ضع هنا ايدي جروب التخزين -100 الخاص بك",
+        "value": "",
+        "required": true
+      }
+    },
+    "buildpacks": [
+          {
+              "url": "heroku/python"
+          },
+          {
+              "url": "heroku/nodejs"
+          },
+          {
+              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+          }
+      ],
+      "stack": "container"
+  }
